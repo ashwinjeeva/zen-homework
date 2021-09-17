@@ -1,0 +1,16 @@
+﻿DAY 1 :
+
+
+Difference between http1.1 and http2.0
+
+
+http 1.1 loads data one after the other if one data is not loaded it will block all the other data behind it 
+Whereas http 2 sends multiple  data at once so that no one daya blocks any other data
+
+
+http 1.1  keeps all requests and responses in plain text format
+Whereas http 2 uses the binary framing layer to encapsulate all messages in binary format while still maintaining http semantics, such as verbs, methods, and headers.
+
+
+In http 1.1 flow control relies on the underlying TCP connection 
+Whereas http 2 multiplexes streams of data within a single TCP connection.
