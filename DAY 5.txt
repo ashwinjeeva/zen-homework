@@ -1,0 +1,408 @@
+﻿DAY 5
+
+
+1.Print odd numbers in an array
+
+
+var x = [ 1,2,3,4,5,6,7]; 
+
+
+
+
+(function (arr) {
+  for (i=0; i<arr.length; i++) {
+      if(arr[i]%2!==0){
+    console.log(arr[i])}
+  }
+})(x)
+
+
+Output:
+1
+3
+5
+7
+
+
+Execution Time:
+0.068s
+Memory Used:
+8084kb
+
+
+2.Convert all the strings to title caps in a string array
+
+
+    
+var x = [ "a","c","f","h","e","i"]; 
+
+
+
+
+(function (arr) {
+    var c=""
+  for (i=0; i<arr.length; i++) {
+      c=c+arr[i].toUpperCase()
+    
+    }
+    console.log(c)
+})(x)
+
+
+Output:
+ACFHEI
+
+
+Execution Time:
+0.064s
+Memory Used:
+8080kb
+
+
+
+
+
+
+3.Sum of all numbers in an array
+var x = [1,2,3,4,5,6]; 
+
+
+
+
+a= function (arr) {
+    var c=0
+  for (i=0; i<arr.length; i++) {
+      c=c+arr[i]
+    
+    }
+    return c
+}
+console.log(a(x))
+
+
+Output:
+21
+
+
+Execution Time:
+0.065s
+Memory Used:
+8148kb
+
+
+4. Return all the prime numbers in an array
+
+
+var arr = [2,3,4,5,6,7,8,9,10,11,12,13,44,25,27,17]; 
+a=function (arr){
+    for (j=0;j<=arr.length;j++) {
+  for (i=2;i<=arr[j];i++) {
+      
+      if(arr[j]%i==0 ){
+          temp=i
+          break}
+      
+          
+     }
+     if(temp==arr[j]){
+         console.log(arr[j])
+     }
+    
+        
+  
+   }
+}
+a(arr)
+
+
+Output:
+2
+3
+5
+7
+11
+13
+17
+
+
+Execution Time:
+0.066s
+Memory Used:
+8112kb
+
+
+
+
+5.Return all the palindromes in an array
+
+
+var arr = ["ashwin","kumar","racecar","malayalam"]; 
+a=function (arr){
+    for(i=0;i<arr.length;i++){
+   v=arr[i]
+  var rev=v.split("").reverse().join("")
+ if(rev==arr[i]){
+      console.log(rev)
+  }
+
+
+    }
+   
+}
+a(arr)
+
+
+Output:
+racecar
+malayalam
+
+
+Execution Time:
+0.066s
+Memory Used:
+8104kb
+
+
+6.Return median of two sorted arrays of same size
+
+
+let arr1=[1,2,3,4]
+let arr2=[12,14,18,6]
+let arr=[...arr1,...arr2]
+arr.sort(function(a,b){
+  return a-b
+})
+let aa=function(arr){
+if(arr.length%2==0){
+  let m=arr.length/2
+  let add=(arr[m]+arr[m-1])/2
+  return add;
+}
+else if(arr.length%2!=0){
+  let m=Math.ceil(arr.length/2)
+  return add[m]
+
+
+}}
+console.log(aa(arr));
+Output:
+5
+
+
+Execution Time:
+0.066s
+Memory Used:
+8052kb
+
+
+Remove duplicates from an array
+var x = [1,2,3,4,5,6,3,1,4]
+
+
+
+
+a=function (arr) {
+  for(i=0;i<arr.length;i++){
+    for(j=i+1;j<arr.length;j++){
+        if(arr[i]==arr[j]){
+            arr.splice(j,1)
+        }
+    }
+
+
+    
+}
+console.log(arr);
+}
+a(x)
+Output:
+
+
+[ 1, 2, 3, 4, 5, 6 ]
+
+
+Execution Time:
+0.066s
+Memory Used:
+8112kb
+
+
+Rotate an array by k times
+
+
+var x = [1,2,3,4,5]
+let k=8
+
+
+a=function (arr) {
+  for(i=1;i<=k;i++){
+      v=arr.shift()
+      arr.push(v)
+    }
+        console.log(arr);
+    }
+a(x)
+Output:
+[ 4, 5, 1, 2, 3 ]
+
+
+Execution Time:
+0.067s
+Memory Used:
+8140kb
+
+
+Print odd numbers in an array
+
+
+let arr=[1,2,3,4,5,6,7]
+a=(arr)=>{
+    for(i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i])
+        }
+    }
+}
+a(arr)
+
+
+Output:
+1
+3
+5
+7
+
+
+Execution Time:
+0.066s
+Memory Used:
+8184kb
+
+
+Convert all the strings to title caps in a string array
+
+
+let a=['a','g','u','k','r','c','b']
+let b=(arr)=>{
+      var c=""
+  for (i=0; i<arr.length; i++) {
+      c=c+arr[i].toUpperCase()
+    
+    }
+    console.log(c)
+
+
+    
+    
+}
+b(a)
+
+
+Output:
+AGUKRCB
+
+
+Execution Time:
+0.064s
+Memory Used:
+8180kb
+
+
+Sum of all numbers in an array
+
+
+var x = [1,2,3,4,5,6]; 
+
+
+
+
+a=  (arr)=> {
+    var c=0
+  for (i=0; i<arr.length; i++) {
+      c=c+arr[i]
+    
+    }
+    return c
+}
+console.log(a(x))
+
+
+Output:
+21
+
+
+Execution Time:
+0.065s
+Memory Used:
+8148kb
+
+
+Return all the prime numbers in an array
+
+
+var arr = [2,3,4,5,6,7,8,9,10,11,12,13,44,25,27,17]; 
+a=(arr)=>{
+    for (j=0;j<=arr.length;j++) {
+  for (i=2;i<=arr[j];i++) {
+      
+      if(arr[j]%i==0 ){
+          temp=i
+          break}
+      
+          
+     }
+     if(temp==arr[j]){
+         console.log(arr[j])
+     }
+    
+        
+  
+   }
+}
+a(arr)
+
+
+Output:
+2
+3
+5
+7
+11
+13
+17
+
+
+Execution Time:
+0.066s
+Memory Used:
+8112kb
+
+
+Return all the palindromes in an array
+
+
+var arr = ["ashwin","kumar","racecar","malayalam"]; 
+a= (arr)=>{
+    for(i=0;i<arr.length;i++){
+   v=arr[i]
+  var rev=v.split("").reverse().join("")
+ if(rev==arr[i]){
+      console.log(rev)
+  }
+
+
+    }
+   
+}
+a(arr)
+
+
+Output:
+racecar
+malayalam
+
+
+Execution Time:
+0.066s
+Memory Used:
+8104kb

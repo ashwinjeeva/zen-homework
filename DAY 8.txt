@@ -1,0 +1,204 @@
+﻿DAY 8
+
+
+Write a “person” class to hold all the details.
+
+
+
+
+class Person {
+  constructor(n,a,g,h,w){
+    this.name=n
+    this.age=a
+    this.gender=g
+    this.height=h
+    this.weight=w
+  }
+  speak(){
+    console.log(`hello i am ${this.name} `);
+  }
+  whatisyourage(){
+    console.log(`i am ${this.age} years old `);
+  } 
+  whatisyourheight(){
+    console.log(`i am ${this.height} foot tall`);
+  } 
+}
+
+
+let p1=new Person("ashwin",21,"male",5.6,70)
+console.log(p1.name,p1.age,p1.gender,p1.height,p1.weight);
+p1.speak()
+p1.whatisyourage()
+p1.whatisyourheight()
+let p2=new Person("kumar",55,"male",6,80)
+console.log(p2.name,p2.age,p2.gender,p2.height,p2.weight);
+p2.speak()
+p2.whatisyourage()
+p2.whatisyourheight()
+
+
+
+
+Output:
+ashwin 21 male 5.6 70
+hello i am ashwin 
+i am 21 years old 
+i am 5.6 foot tall
+kumar 55 male 6 80
+hello i am kumar 
+i am 55 years old 
+i am 6 foot tall
+
+
+Execution Time:
+0.066s
+Memory Used:
+8340kb
+
+
+CREATING CLASS MOVIE
+
+
+class Movie {
+  constructor(n,s,r="PG"){
+    this.name=n
+    this.studio=s
+    this.rating=r
+    
+  }
+  get getpg(){
+      
+      if(this.rating=="PG"){
+    console.log(this.name)}
+  
+}
+}
+let m1=new Movie("Casino Royale","Eon Productions","PG")
+let m2=new Movie("Avathar","20th Century Fox","PG13")
+let m3=new Movie("Edge of tomorrow","Warner Bros","PG")
+let m4=new Movie("Mission impossible","Warner Bros","PG13")
+
+
+console.log(m1.name,m1.studio,m1.rating);
+
+
+let arr=[m1,m2,m3,m4]
+for(i=0;i<arr.length;i++){
+    v=arr[i]
+  v.getpg  
+}
+Output:
+Casino Royale Eon Productions PG
+Casino Royale
+Edge of tomorrow
+
+
+Execution Time:
+0.065s
+Memory Used:
+8116kb
+
+
+
+
+
+
+GETTING UBER PRICE 
+class Uberprice {
+  constructor(cn,km){
+    this.c_name=cn
+    this.distance=km
+
+
+    
+  }
+  get getprice(){
+      if(this.distance>=0 && this.distance<=10){
+          let amu=this.distance*.75
+          console.log(`customer name : ${this.c_name}`)
+          console.log(`total distance traveled: ${this.distance}`)
+          console.log(`Total amount is: rs ${amu}`)
+      }
+      else if(this.distance>=11 && this.distance<=25){
+          let amu=this.distance*.50
+          console.log(`customer name is: ${this.c_name}`)
+          console.log(`total distance traveled: ${this.distance}`)
+          console.log(`Total amount is: rs ${amu}`)
+      }
+      else if(this.distance>=26 ){
+          let amu=this.distance*.25
+          console.log(`customer name is: ${this.c_name}`)
+          console.log(`total distance traveled: ${this.distance}`)
+          console.log(`Total amount is: rs ${amu}`)
+      }
+  
+}
+}
+let m1=new Uberprice("ashwin",50)
+let m2=new Uberprice("rekha",11)
+let m3=new Uberprice("kumar",5)
+
+
+m1.getprice
+m2.getprice
+m3.getprice
+
+
+Output:
+customer name is: ashwin
+total distance traveled: 50
+Total amount is: rs 12.5
+customer name is: rekha
+total distance traveled: 11
+Total amount is: rs 5.5
+customer name : kumar
+total distance traveled: 5
+Total amount is: rs 3.75
+
+
+Execution Time:
+0.066s
+Memory Used:
+8364kb
+
+
+Converting UML to code
+
+
+class Circle{
+  #radius
+  #color
+  constructor(){
+    this.#radius=1.0
+    this.#color="red"
+  }
+  get radius(){
+
+
+  }
+  set radius(radius){
+
+
+  }
+  get color(){
+
+
+  }
+  set color(color){
+
+
+  }
+  tostring(){
+
+
+  }
+  get area(){
+
+
+  }
+  get circumferance (){
+
+
+}
+}

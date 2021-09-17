@@ -1,0 +1,73 @@
+﻿DAY 2 :
+
+
+Difference between javascript  and nodejs
+
+
+Javascript:
+1.Javascript is a programming language used for writing scripts on the website
+2.Javascript can only be run in the browsers.
+3.used on the clientside
+4.It is used in frontend development
+5.Javascript is capable enough to add HTML and play with the DOM.
+
+
+Nodejs
+1.NodeJS is a Javascript runtime environment
+2.It is used in back development
+3.used on the serverside
+4.We can run Javascript outside the browser with the help of NodeJS.
+5.Nodejs does not have capability to add HTML tags.
+
+
+Video summary 
+
+
+Step 1 the rendering engine wii ask all the contents for displaying by using network module 
+
+
+Step 2  rendering engine will break all the html and css documents into DOM tree and cssom tree
+
+
+Step 3 rendering engine will create a render tree which applies all style to the DOM elements 
+It is the visual representation of the document
+
+
+Step 4 this step gives the element where it should be positioned on the screen
+It gives the coordinate where it should appear on the screen
+
+
+Step 5 in this stage the render tree call the paint() method to display the content on the screen
+
+
+
+
+
+
+
+
+
+
+Execute the below code and write your description in txt file
+
+
+INPUT:
+typeof(1)                  
+typeof(1.1)                        
+typeof('1.1')                
+typeof(true)                
+typeof(null)                
+typeof(undefined)        
+typeof([])                
+typeof({})                
+typeof(NaN)          
+OUTPUT:
+number
+                number        
+string
+boolean
+object
+undefined
+object
+object        
+number

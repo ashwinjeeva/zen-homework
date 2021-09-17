@@ -1,0 +1,1328 @@
+﻿DAY 4
+
+
+Use the rest countries API and display all the country flags in console
+
+
+INPUT:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var xhr = new XMLHttpRequest();
+xhr.open("GET","https://restcountries.eu/rest/v2/all")
+xhr.onload=function(){
+    var t= JSON.parse(this.response)
+    for (x in t) {
+        console.log(t[x].flag)
+        }
+    }
+xhr.send();
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+OUTPUT:
+ddddd.html:11 https://restcountries.eu/data/afg.svg
+ddddd.html:11 https://restcountries.eu/data/ala.svg
+ddddd.html:11 https://restcountries.eu/data/alb.svg
+ddddd.html:11 https://restcountries.eu/data/dza.svg
+ddddd.html:11 https://restcountries.eu/data/asm.svg
+ddddd.html:11 https://restcountries.eu/data/and.svg
+ddddd.html:11 https://restcountries.eu/data/ago.svg
+ddddd.html:11 https://restcountries.eu/data/aia.svg
+ddddd.html:11 https://restcountries.eu/data/ata.svg
+ddddd.html:11 https://restcountries.eu/data/atg.svg
+ddddd.html:11 https://restcountries.eu/data/arg.svg
+ddddd.html:11 https://restcountries.eu/data/arm.svg
+ddddd.html:11 https://restcountries.eu/data/abw.svg
+ddddd.html:11 https://restcountries.eu/data/aus.svg
+ddddd.html:11 https://restcountries.eu/data/aut.svg
+ddddd.html:11 https://restcountries.eu/data/aze.svg
+ddddd.html:11 https://restcountries.eu/data/bhs.svg
+ddddd.html:11 https://restcountries.eu/data/bhr.svg
+ddddd.html:11 https://restcountries.eu/data/bgd.svg
+ddddd.html:11 https://restcountries.eu/data/brb.svg
+ddddd.html:11 https://restcountries.eu/data/blr.svg
+ddddd.html:11 https://restcountries.eu/data/bel.svg
+ddddd.html:11 https://restcountries.eu/data/blz.svg
+ddddd.html:11 https://restcountries.eu/data/ben.svg
+ddddd.html:11 https://restcountries.eu/data/bmu.svg
+ddddd.html:11 https://restcountries.eu/data/btn.svg
+ddddd.html:11 https://restcountries.eu/data/bol.svg
+ddddd.html:11 https://restcountries.eu/data/bes.svg
+ddddd.html:11 https://restcountries.eu/data/bih.svg
+ddddd.html:11 https://restcountries.eu/data/bwa.svg
+ddddd.html:11 https://restcountries.eu/data/bvt.svg
+ddddd.html:11 https://restcountries.eu/data/bra.svg
+ddddd.html:11 https://restcountries.eu/data/iot.svg
+ddddd.html:11 https://restcountries.eu/data/umi.svg
+ddddd.html:11 https://restcountries.eu/data/vgb.svg
+ddddd.html:11 https://restcountries.eu/data/vir.svg
+ddddd.html:11 https://restcountries.eu/data/brn.svg
+ddddd.html:11 https://restcountries.eu/data/bgr.svg
+ddddd.html:11 https://restcountries.eu/data/bfa.svg
+ddddd.html:11 https://restcountries.eu/data/bdi.svg
+ddddd.html:11 https://restcountries.eu/data/khm.svg
+ddddd.html:11 https://restcountries.eu/data/cmr.svg
+ddddd.html:11 https://restcountries.eu/data/can.svg
+ddddd.html:11 https://restcountries.eu/data/cpv.svg
+ddddd.html:11 https://restcountries.eu/data/cym.svg
+ddddd.html:11 https://restcountries.eu/data/caf.svg
+ddddd.html:11 https://restcountries.eu/data/tcd.svg
+ddddd.html:11 https://restcountries.eu/data/chl.svg
+ddddd.html:11 https://restcountries.eu/data/chn.svg
+ddddd.html:11 https://restcountries.eu/data/cxr.svg
+ddddd.html:11 https://restcountries.eu/data/cck.svg
+ddddd.html:11 https://restcountries.eu/data/col.svg
+ddddd.html:11 https://restcountries.eu/data/com.svg
+ddddd.html:11 https://restcountries.eu/data/cog.svg
+ddddd.html:11 https://restcountries.eu/data/cod.svg
+ddddd.html:11 https://restcountries.eu/data/cok.svg
+ddddd.html:11 https://restcountries.eu/data/cri.svg
+ddddd.html:11 https://restcountries.eu/data/hrv.svg
+ddddd.html:11 https://restcountries.eu/data/cub.svg
+ddddd.html:11 https://restcountries.eu/data/cuw.svg
+ddddd.html:11 https://restcountries.eu/data/cyp.svg
+ddddd.html:11 https://restcountries.eu/data/cze.svg
+ddddd.html:11 https://restcountries.eu/data/dnk.svg
+ddddd.html:11 https://restcountries.eu/data/dji.svg
+ddddd.html:11 https://restcountries.eu/data/dma.svg
+ddddd.html:11 https://restcountries.eu/data/dom.svg
+ddddd.html:11 https://restcountries.eu/data/ecu.svg
+ddddd.html:11 https://restcountries.eu/data/egy.svg
+ddddd.html:11 https://restcountries.eu/data/slv.svg
+ddddd.html:11 https://restcountries.eu/data/gnq.svg
+ddddd.html:11 https://restcountries.eu/data/eri.svg
+ddddd.html:11 https://restcountries.eu/data/est.svg
+ddddd.html:11 https://restcountries.eu/data/eth.svg
+ddddd.html:11 https://restcountries.eu/data/flk.svg
+ddddd.html:11 https://restcountries.eu/data/fro.svg
+ddddd.html:11 https://restcountries.eu/data/fji.svg
+ddddd.html:11 https://restcountries.eu/data/fin.svg
+ddddd.html:11 https://restcountries.eu/data/fra.svg
+ddddd.html:11 https://restcountries.eu/data/guf.svg
+ddddd.html:11 https://restcountries.eu/data/pyf.svg
+ddddd.html:11 https://restcountries.eu/data/atf.svg
+ddddd.html:11 https://restcountries.eu/data/gab.svg
+ddddd.html:11 https://restcountries.eu/data/gmb.svg
+ddddd.html:11 https://restcountries.eu/data/geo.svg
+ddddd.html:11 https://restcountries.eu/data/deu.svg
+ddddd.html:11 https://restcountries.eu/data/gha.svg
+ddddd.html:11 https://restcountries.eu/data/gib.svg
+ddddd.html:11 https://restcountries.eu/data/grc.svg
+ddddd.html:11 https://restcountries.eu/data/grl.svg
+ddddd.html:11 https://restcountries.eu/data/grd.svg
+ddddd.html:11 https://restcountries.eu/data/glp.svg
+ddddd.html:11 https://restcountries.eu/data/gum.svg
+ddddd.html:11 https://restcountries.eu/data/gtm.svg
+ddddd.html:11 https://restcountries.eu/data/ggy.svg
+ddddd.html:11 https://restcountries.eu/data/gin.svg
+ddddd.html:11 https://restcountries.eu/data/gnb.svg
+ddddd.html:11 https://restcountries.eu/data/guy.svg
+ddddd.html:11 https://restcountries.eu/data/hti.svg
+ddddd.html:11 https://restcountries.eu/data/hmd.svg
+ddddd.html:11 https://restcountries.eu/data/vat.svg
+ddddd.html:11 https://restcountries.eu/data/hnd.svg
+ddddd.html:11 https://restcountries.eu/data/hkg.svg
+ddddd.html:11 https://restcountries.eu/data/hun.svg
+ddddd.html:11 https://restcountries.eu/data/isl.svg
+ddddd.html:11 https://restcountries.eu/data/ind.svg
+ddddd.html:11 https://restcountries.eu/data/idn.svg
+ddddd.html:11 https://restcountries.eu/data/civ.svg
+ddddd.html:11 https://restcountries.eu/data/irn.svg
+ddddd.html:11 https://restcountries.eu/data/irq.svg
+ddddd.html:11 https://restcountries.eu/data/irl.svg
+ddddd.html:11 https://restcountries.eu/data/imn.svg
+ddddd.html:11 https://restcountries.eu/data/isr.svg
+ddddd.html:11 https://restcountries.eu/data/ita.svg
+ddddd.html:11 https://restcountries.eu/data/jam.svg
+ddddd.html:11 https://restcountries.eu/data/jpn.svg
+ddddd.html:11 https://restcountries.eu/data/jey.svg
+ddddd.html:11 https://restcountries.eu/data/jor.svg
+ddddd.html:11 https://restcountries.eu/data/kaz.svg
+ddddd.html:11 https://restcountries.eu/data/ken.svg
+ddddd.html:11 https://restcountries.eu/data/kir.svg
+ddddd.html:11 https://restcountries.eu/data/kwt.svg
+ddddd.html:11 https://restcountries.eu/data/kgz.svg
+ddddd.html:11 https://restcountries.eu/data/lao.svg
+ddddd.html:11 https://restcountries.eu/data/lva.svg
+ddddd.html:11 https://restcountries.eu/data/lbn.svg
+ddddd.html:11 https://restcountries.eu/data/lso.svg
+ddddd.html:11 https://restcountries.eu/data/lbr.svg
+ddddd.html:11 https://restcountries.eu/data/lby.svg
+ddddd.html:11 https://restcountries.eu/data/lie.svg
+ddddd.html:11 https://restcountries.eu/data/ltu.svg
+ddddd.html:11 https://restcountries.eu/data/lux.svg
+ddddd.html:11 https://restcountries.eu/data/mac.svg
+ddddd.html:11 https://restcountries.eu/data/mkd.svg
+ddddd.html:11 https://restcountries.eu/data/mdg.svg
+ddddd.html:11 https://restcountries.eu/data/mwi.svg
+ddddd.html:11 https://restcountries.eu/data/mys.svg
+ddddd.html:11 https://restcountries.eu/data/mdv.svg
+ddddd.html:11 https://restcountries.eu/data/mli.svg
+ddddd.html:11 https://restcountries.eu/data/mlt.svg
+ddddd.html:11 https://restcountries.eu/data/mhl.svg
+ddddd.html:11 https://restcountries.eu/data/mtq.svg
+ddddd.html:11 https://restcountries.eu/data/mrt.svg
+ddddd.html:11 https://restcountries.eu/data/mus.svg
+ddddd.html:11 https://restcountries.eu/data/myt.svg
+ddddd.html:11 https://restcountries.eu/data/mex.svg
+ddddd.html:11 https://restcountries.eu/data/fsm.svg
+ddddd.html:11 https://restcountries.eu/data/mda.svg
+ddddd.html:11 https://restcountries.eu/data/mco.svg
+ddddd.html:11 https://restcountries.eu/data/mng.svg
+ddddd.html:11 https://restcountries.eu/data/mne.svg
+ddddd.html:11 https://restcountries.eu/data/msr.svg
+ddddd.html:11 https://restcountries.eu/data/mar.svg
+ddddd.html:11 https://restcountries.eu/data/moz.svg
+ddddd.html:11 https://restcountries.eu/data/mmr.svg
+ddddd.html:11 https://restcountries.eu/data/nam.svg
+ddddd.html:11 https://restcountries.eu/data/nru.svg
+ddddd.html:11 https://restcountries.eu/data/npl.svg
+ddddd.html:11 https://restcountries.eu/data/nld.svg
+ddddd.html:11 https://restcountries.eu/data/ncl.svg
+ddddd.html:11 https://restcountries.eu/data/nzl.svg
+ddddd.html:11 https://restcountries.eu/data/nic.svg
+ddddd.html:11 https://restcountries.eu/data/ner.svg
+ddddd.html:11 https://restcountries.eu/data/nga.svg
+ddddd.html:11 https://restcountries.eu/data/niu.svg
+ddddd.html:11 https://restcountries.eu/data/nfk.svg
+ddddd.html:11 https://restcountries.eu/data/prk.svg
+ddddd.html:11 https://restcountries.eu/data/mnp.svg
+ddddd.html:11 https://restcountries.eu/data/nor.svg
+ddddd.html:11 https://restcountries.eu/data/omn.svg
+ddddd.html:11 https://restcountries.eu/data/pak.svg
+ddddd.html:11 https://restcountries.eu/data/plw.svg
+ddddd.html:11 https://restcountries.eu/data/pse.svg
+ddddd.html:11 https://restcountries.eu/data/pan.svg
+ddddd.html:11 https://restcountries.eu/data/png.svg
+ddddd.html:11 https://restcountries.eu/data/pry.svg
+ddddd.html:11 https://restcountries.eu/data/per.svg
+ddddd.html:11 https://restcountries.eu/data/phl.svg
+ddddd.html:11 https://restcountries.eu/data/pcn.svg
+ddddd.html:11 https://restcountries.eu/data/pol.svg
+ddddd.html:11 https://restcountries.eu/data/prt.svg
+ddddd.html:11 https://restcountries.eu/data/pri.svg
+ddddd.html:11 https://restcountries.eu/data/qat.svg
+ddddd.html:11 https://restcountries.eu/data/kos.svg
+ddddd.html:11 https://restcountries.eu/data/reu.svg
+ddddd.html:11 https://restcountries.eu/data/rou.svg
+ddddd.html:11 https://restcountries.eu/data/rus.svg
+ddddd.html:11 https://restcountries.eu/data/rwa.svg
+ddddd.html:11 https://restcountries.eu/data/blm.svg
+ddddd.html:11 https://restcountries.eu/data/shn.svg
+ddddd.html:11 https://restcountries.eu/data/kna.svg
+ddddd.html:11 https://restcountries.eu/data/lca.svg
+ddddd.html:11 https://restcountries.eu/data/maf.svg
+ddddd.html:11 https://restcountries.eu/data/spm.svg
+ddddd.html:11 https://restcountries.eu/data/vct.svg
+ddddd.html:11 https://restcountries.eu/data/wsm.svg
+ddddd.html:11 https://restcountries.eu/data/smr.svg
+ddddd.html:11 https://restcountries.eu/data/stp.svg
+ddddd.html:11 https://restcountries.eu/data/sau.svg
+ddddd.html:11 https://restcountries.eu/data/sen.svg
+ddddd.html:11 https://restcountries.eu/data/srb.svg
+ddddd.html:11 https://restcountries.eu/data/syc.svg
+ddddd.html:11 https://restcountries.eu/data/sle.svg
+ddddd.html:11 https://restcountries.eu/data/sgp.svg
+ddddd.html:11 https://restcountries.eu/data/sxm.svg
+ddddd.html:11 https://restcountries.eu/data/svk.svg
+ddddd.html:11 https://restcountries.eu/data/svn.svg
+ddddd.html:11 https://restcountries.eu/data/slb.svg
+ddddd.html:11 https://restcountries.eu/data/som.svg
+ddddd.html:11 https://restcountries.eu/data/zaf.svg
+ddddd.html:11 https://restcountries.eu/data/sgs.svg
+ddddd.html:11 https://restcountries.eu/data/kor.svg
+ddddd.html:11 https://restcountries.eu/data/ssd.svg
+ddddd.html:11 https://restcountries.eu/data/esp.svg
+ddddd.html:11 https://restcountries.eu/data/lka.svg
+ddddd.html:11 https://restcountries.eu/data/sdn.svg
+ddddd.html:11 https://restcountries.eu/data/sur.svg
+ddddd.html:11 https://restcountries.eu/data/sjm.svg
+ddddd.html:11 https://restcountries.eu/data/swz.svg
+ddddd.html:11 https://restcountries.eu/data/swe.svg
+ddddd.html:11 https://restcountries.eu/data/che.svg
+ddddd.html:11 https://restcountries.eu/data/syr.svg
+ddddd.html:11 https://restcountries.eu/data/twn.svg
+ddddd.html:11 https://restcountries.eu/data/tjk.svg
+ddddd.html:11 https://restcountries.eu/data/tza.svg
+ddddd.html:11 https://restcountries.eu/data/tha.svg
+ddddd.html:11 https://restcountries.eu/data/tls.svg
+ddddd.html:11 https://restcountries.eu/data/tgo.svg
+ddddd.html:11 https://restcountries.eu/data/tkl.svg
+ddddd.html:11 https://restcountries.eu/data/ton.svg
+ddddd.html:11 https://restcountries.eu/data/tto.svg
+ddddd.html:11 https://restcountries.eu/data/tun.svg
+ddddd.html:11 https://restcountries.eu/data/tur.svg
+ddddd.html:11 https://restcountries.eu/data/tkm.svg
+ddddd.html:11 https://restcountries.eu/data/tca.svg
+ddddd.html:11 https://restcountries.eu/data/tuv.svg
+ddddd.html:11 https://restcountries.eu/data/uga.svg
+ddddd.html:11 https://restcountries.eu/data/ukr.svg
+ddddd.html:11 https://restcountries.eu/data/are.svg
+ddddd.html:11 https://restcountries.eu/data/gbr.svg
+ddddd.html:11 https://restcountries.eu/data/usa.svg
+ddddd.html:11 https://restcountries.eu/data/ury.svg
+ddddd.html:11 https://restcountries.eu/data/uzb.svg
+ddddd.html:11 https://restcountries.eu/data/vut.svg
+ddddd.html:11 https://restcountries.eu/data/ven.svg
+ddddd.html:11 https://restcountries.eu/data/vnm.svg
+ddddd.html:11 https://restcountries.eu/data/wlf.svg
+ddddd.html:11 https://restcountries.eu/data/esh.svg
+ddddd.html:11 https://restcountries.eu/data/yem.svg
+ddddd.html:11 https://restcountries.eu/data/zmb.svg
+ddddd.html:11 https://restcountries.eu/data/zwe.svg
+
+
+Use the same rest countries and print all countries name, region, sub region and population
+
+
+INPUT:
+var xhr = new XMLHttpRequest();
+xhr.open("GET","https://restcountries.eu/rest/v2/all")
+xhr.onload=function(){
+        var t= JSON.parse(this.response)
+        for (x in t) {
+                console.log(t[x].name)
+                console.log(t[x].region)
+                console.log(t[x].subregion)
+                console.log(t[x].population)
+                }
+        }
+OUTPUT:
+ddddd.html:11 Afghanistan
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 27657145
+ddddd.html:11 Åland Islands
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 28875
+ddddd.html:11 Albania
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 2886026
+ddddd.html:11 Algeria
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 40400000
+ddddd.html:11 American Samoa
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 57100
+ddddd.html:11 Andorra
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 78014
+ddddd.html:11 Angola
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 25868000
+ddddd.html:11 Anguilla
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 13452
+ddddd.html:11 Antarctica
+ddddd.html:12 Polar
+ddddd.html:13 
+ddddd.html:14 1000
+ddddd.html:11 Antigua and Barbuda
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 86295
+ddddd.html:11 Argentina
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 43590400
+ddddd.html:11 Armenia
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 2994400
+ddddd.html:11 Aruba
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 107394
+ddddd.html:11 Australia
+ddddd.html:12 Oceania
+ddddd.html:13 Australia and New Zealand
+ddddd.html:14 24117360
+ddddd.html:11 Austria
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 8725931
+ddddd.html:11 Azerbaijan
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 9730500
+ddddd.html:11 Bahamas
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 378040
+ddddd.html:11 Bahrain
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 1404900
+ddddd.html:11 Bangladesh
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 161006790
+ddddd.html:11 Barbados
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 285000
+ddddd.html:11 Belarus
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 9498700
+ddddd.html:11 Belgium
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 11319511
+ddddd.html:11 Belize
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 370300
+ddddd.html:11 Benin
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 10653654
+ddddd.html:11 Bermuda
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 61954
+ddddd.html:11 Bhutan
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 775620
+ddddd.html:11 Bolivia (Plurinational State of)
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 10985059
+ddddd.html:11 Bonaire, Sint Eustatius and Saba
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 17408
+ddddd.html:11 Bosnia and Herzegovina
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 3531159
+ddddd.html:11 Botswana
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 2141206
+ddddd.html:11 Bouvet Island
+ddddd.html:12 
+ddddd.html:13 
+ddddd.html:14 0
+ddddd.html:11 Brazil
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 206135893
+ddddd.html:11 British Indian Ocean Territory
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 3000
+ddddd.html:11 United States Minor Outlying Islands
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 300
+ddddd.html:11 Virgin Islands (British)
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 28514
+ddddd.html:11 Virgin Islands (U.S.)
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 114743
+ddddd.html:11 Brunei Darussalam
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 411900
+ddddd.html:11 Bulgaria
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 7153784
+ddddd.html:11 Burkina Faso
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 19034397
+ddddd.html:11 Burundi
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 10114505
+ddddd.html:11 Cambodia
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 15626444
+ddddd.html:11 Cameroon
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 22709892
+ddddd.html:11 Canada
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 36155487
+ddddd.html:11 Cabo Verde
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 531239
+ddddd.html:11 Cayman Islands
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 58238
+ddddd.html:11 Central African Republic
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 4998000
+ddddd.html:11 Chad
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 14497000
+ddddd.html:11 Chile
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 18191900
+ddddd.html:11 China
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 1377422166
+ddddd.html:11 Christmas Island
+ddddd.html:12 Oceania
+ddddd.html:13 Australia and New Zealand
+ddddd.html:14 2072
+ddddd.html:11 Cocos (Keeling) Islands
+ddddd.html:12 Oceania
+ddddd.html:13 Australia and New Zealand
+ddddd.html:14 550
+ddddd.html:11 Colombia
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 48759958
+ddddd.html:11 Comoros
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 806153
+ddddd.html:11 Congo
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 4741000
+ddddd.html:11 Congo (Democratic Republic of the)
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 85026000
+ddddd.html:11 Cook Islands
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 18100
+ddddd.html:11 Costa Rica
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 4890379
+ddddd.html:11 Croatia
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 4190669
+ddddd.html:11 Cuba
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 11239004
+ddddd.html:11 Curaçao
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 154843
+ddddd.html:11 Cyprus
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 847000
+ddddd.html:11 Czech Republic
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 10558524
+ddddd.html:11 Denmark
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 5717014
+ddddd.html:11 Djibouti
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 900000
+ddddd.html:11 Dominica
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 71293
+ddddd.html:11 Dominican Republic
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 10075045
+ddddd.html:11 Ecuador
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 16545799
+ddddd.html:11 Egypt
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 91290000
+ddddd.html:11 El Salvador
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 6520675
+ddddd.html:11 Equatorial Guinea
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 1222442
+ddddd.html:11 Eritrea
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 5352000
+ddddd.html:11 Estonia
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 1315944
+ddddd.html:11 Ethiopia
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 92206005
+ddddd.html:11 Falkland Islands (Malvinas)
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 2563
+ddddd.html:11 Faroe Islands
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 49376
+ddddd.html:11 Fiji
+ddddd.html:12 Oceania
+ddddd.html:13 Melanesia
+ddddd.html:14 867000
+ddddd.html:11 Finland
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 5491817
+ddddd.html:11 France
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 66710000
+ddddd.html:11 French Guiana
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 254541
+ddddd.html:11 French Polynesia
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 271800
+ddddd.html:11 French Southern Territories
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 140
+ddddd.html:11 Gabon
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 1802278
+ddddd.html:11 Gambia
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 1882450
+ddddd.html:11 Georgia
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 3720400
+ddddd.html:11 Germany
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 81770900
+ddddd.html:11 Ghana
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 27670174
+ddddd.html:11 Gibraltar
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 33140
+ddddd.html:11 Greece
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 10858018
+ddddd.html:11 Greenland
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 55847
+ddddd.html:11 Grenada
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 103328
+ddddd.html:11 Guadeloupe
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 400132
+ddddd.html:11 Guam
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 184200
+ddddd.html:11 Guatemala
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 16176133
+ddddd.html:11 Guernsey
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 62999
+ddddd.html:11 Guinea
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 12947000
+ddddd.html:11 Guinea-Bissau
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 1547777
+ddddd.html:11 Guyana
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 746900
+ddddd.html:11 Haiti
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 11078033
+ddddd.html:11 Heard Island and McDonald Islands
+ddddd.html:12 
+ddddd.html:13 
+ddddd.html:14 0
+ddddd.html:11 Holy See
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 451
+ddddd.html:11 Honduras
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 8576532
+ddddd.html:11 Hong Kong
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 7324300
+ddddd.html:11 Hungary
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 9823000
+ddddd.html:11 Iceland
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 334300
+ddddd.html:11 India
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 1295210000
+ddddd.html:11 Indonesia
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 258705000
+ddddd.html:11 Côte d'Ivoire
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 22671331
+ddddd.html:11 Iran (Islamic Republic of)
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 79369900
+ddddd.html:11 Iraq
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 37883543
+ddddd.html:11 Ireland
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 6378000
+ddddd.html:11 Isle of Man
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 84497
+ddddd.html:11 Israel
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 8527400
+ddddd.html:11 Italy
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 60665551
+ddddd.html:11 Jamaica
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 2723246
+ddddd.html:11 Japan
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 126960000
+ddddd.html:11 Jersey
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 100800
+ddddd.html:11 Jordan
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 9531712
+ddddd.html:11 Kazakhstan
+ddddd.html:12 Asia
+ddddd.html:13 Central Asia
+ddddd.html:14 17753200
+ddddd.html:11 Kenya
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 47251000
+ddddd.html:11 Kiribati
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 113400
+ddddd.html:11 Kuwait
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 4183658
+ddddd.html:11 Kyrgyzstan
+ddddd.html:12 Asia
+ddddd.html:13 Central Asia
+ddddd.html:14 6047800
+ddddd.html:11 Lao People's Democratic Republic
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 6492400
+ddddd.html:11 Latvia
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 1961600
+ddddd.html:11 Lebanon
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 5988000
+ddddd.html:11 Lesotho
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 1894194
+ddddd.html:11 Liberia
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 4615000
+ddddd.html:11 Libya
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 6385000
+ddddd.html:11 Liechtenstein
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 37623
+ddddd.html:11 Lithuania
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 2872294
+ddddd.html:11 Luxembourg
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 576200
+ddddd.html:11 Macao
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 649100
+ddddd.html:11 Macedonia (the former Yugoslav Republic of)
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 2058539
+ddddd.html:11 Madagascar
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 22434363
+ddddd.html:11 Malawi
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 16832910
+ddddd.html:11 Malaysia
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 31405416
+ddddd.html:11 Maldives
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 344023
+ddddd.html:11 Mali
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 18135000
+ddddd.html:11 Malta
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 425384
+ddddd.html:11 Marshall Islands
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 54880
+ddddd.html:11 Martinique
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 378243
+ddddd.html:11 Mauritania
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 3718678
+ddddd.html:11 Mauritius
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 1262879
+ddddd.html:11 Mayotte
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 226915
+ddddd.html:11 Mexico
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 122273473
+ddddd.html:11 Micronesia (Federated States of)
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 102800
+ddddd.html:11 Moldova (Republic of)
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 3553100
+ddddd.html:11 Monaco
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 38400
+ddddd.html:11 Mongolia
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 3093100
+ddddd.html:11 Montenegro
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 621810
+ddddd.html:11 Montserrat
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 4922
+ddddd.html:11 Morocco
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 33337529
+ddddd.html:11 Mozambique
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 26423700
+ddddd.html:11 Myanmar
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 51419420
+ddddd.html:11 Namibia
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 2324388
+ddddd.html:11 Nauru
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 10084
+ddddd.html:11 Nepal
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 28431500
+ddddd.html:11 Netherlands
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 17019800
+ddddd.html:11 New Caledonia
+ddddd.html:12 Oceania
+ddddd.html:13 Melanesia
+ddddd.html:14 268767
+ddddd.html:11 New Zealand
+ddddd.html:12 Oceania
+ddddd.html:13 Australia and New Zealand
+ddddd.html:14 4697854
+ddddd.html:11 Nicaragua
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 6262703
+ddddd.html:11 Niger
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 20715000
+ddddd.html:11 Nigeria
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 186988000
+ddddd.html:11 Niue
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 1470
+ddddd.html:11 Norfolk Island
+ddddd.html:12 Oceania
+ddddd.html:13 Australia and New Zealand
+ddddd.html:14 2302
+ddddd.html:11 Korea (Democratic People's Republic of)
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 25281000
+ddddd.html:11 Northern Mariana Islands
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 56940
+ddddd.html:11 Norway
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 5223256
+ddddd.html:11 Oman
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 4420133
+ddddd.html:11 Pakistan
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 194125062
+ddddd.html:11 Palau
+ddddd.html:12 Oceania
+ddddd.html:13 Micronesia
+ddddd.html:14 17950
+ddddd.html:11 Palestine, State of
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 4682467
+ddddd.html:11 Panama
+ddddd.html:12 Americas
+ddddd.html:13 Central America
+ddddd.html:14 3814672
+ddddd.html:11 Papua New Guinea
+ddddd.html:12 Oceania
+ddddd.html:13 Melanesia
+ddddd.html:14 8083700
+ddddd.html:11 Paraguay
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 6854536
+ddddd.html:11 Peru
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 31488700
+ddddd.html:11 Philippines
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 103279800
+ddddd.html:11 Pitcairn
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 56
+ddddd.html:11 Poland
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 38437239
+ddddd.html:11 Portugal
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 10374822
+ddddd.html:11 Puerto Rico
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 3474182
+ddddd.html:11 Qatar
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 2587564
+ddddd.html:11 Republic of Kosovo
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 1733842
+ddddd.html:11 Réunion
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 840974
+ddddd.html:11 Romania
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 19861408
+ddddd.html:11 Russian Federation
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 146599183
+ddddd.html:11 Rwanda
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 11553188
+ddddd.html:11 Saint Barthélemy
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 9417
+ddddd.html:11 Saint Helena, Ascension and Tristan da Cunha
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 4255
+ddddd.html:11 Saint Kitts and Nevis
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 46204
+ddddd.html:11 Saint Lucia
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 186000
+ddddd.html:11 Saint Martin (French part)
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 36979
+ddddd.html:11 Saint Pierre and Miquelon
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 6069
+ddddd.html:11 Saint Vincent and the Grenadines
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 109991
+ddddd.html:11 Samoa
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 194899
+ddddd.html:11 San Marino
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 33005
+ddddd.html:11 Sao Tome and Principe
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 187356
+ddddd.html:11 Saudi Arabia
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 32248200
+ddddd.html:11 Senegal
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 14799859
+ddddd.html:11 Serbia
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 7076372
+ddddd.html:11 Seychelles
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 91400
+ddddd.html:11 Sierra Leone
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 7075641
+ddddd.html:11 Singapore
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 5535000
+ddddd.html:11 Sint Maarten (Dutch part)
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 38247
+ddddd.html:11 Slovakia
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 5426252
+ddddd.html:11 Slovenia
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 2064188
+ddddd.html:11 Solomon Islands
+ddddd.html:12 Oceania
+ddddd.html:13 Melanesia
+ddddd.html:14 642000
+ddddd.html:11 Somalia
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 11079000
+ddddd.html:11 South Africa
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 55653654
+ddddd.html:11 South Georgia and the South Sandwich Islands
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 30
+ddddd.html:11 Korea (Republic of)
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 50801405
+ddddd.html:11 South Sudan
+ddddd.html:12 Africa
+ddddd.html:13 Middle Africa
+ddddd.html:14 12131000
+ddddd.html:11 Spain
+ddddd.html:12 Europe
+ddddd.html:13 Southern Europe
+ddddd.html:14 46438422
+ddddd.html:11 Sri Lanka
+ddddd.html:12 Asia
+ddddd.html:13 Southern Asia
+ddddd.html:14 20966000
+ddddd.html:11 Sudan
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 39598700
+ddddd.html:11 Suriname
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 541638
+ddddd.html:11 Svalbard and Jan Mayen
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 2562
+ddddd.html:11 Swaziland
+ddddd.html:12 Africa
+ddddd.html:13 Southern Africa
+ddddd.html:14 1132657
+ddddd.html:11 Sweden
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 9894888
+ddddd.html:11 Switzerland
+ddddd.html:12 Europe
+ddddd.html:13 Western Europe
+ddddd.html:14 8341600
+ddddd.html:11 Syrian Arab Republic
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 18564000
+ddddd.html:11 Taiwan
+ddddd.html:12 Asia
+ddddd.html:13 Eastern Asia
+ddddd.html:14 23503349
+ddddd.html:11 Tajikistan
+ddddd.html:12 Asia
+ddddd.html:13 Central Asia
+ddddd.html:14 8593600
+ddddd.html:11 Tanzania, United Republic of
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 55155000
+ddddd.html:11 Thailand
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 65327652
+ddddd.html:11 Timor-Leste
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 1167242
+ddddd.html:11 Togo
+ddddd.html:12 Africa
+ddddd.html:13 Western Africa
+ddddd.html:14 7143000
+ddddd.html:11 Tokelau
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 1411
+ddddd.html:11 Tonga
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 103252
+ddddd.html:11 Trinidad and Tobago
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 1349667
+ddddd.html:11 Tunisia
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 11154400
+ddddd.html:11 Turkey
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 78741053
+ddddd.html:11 Turkmenistan
+ddddd.html:12 Asia
+ddddd.html:13 Central Asia
+ddddd.html:14 4751120
+ddddd.html:11 Turks and Caicos Islands
+ddddd.html:12 Americas
+ddddd.html:13 Caribbean
+ddddd.html:14 31458
+ddddd.html:11 Tuvalu
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 10640
+ddddd.html:11 Uganda
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 33860700
+ddddd.html:11 Ukraine
+ddddd.html:12 Europe
+ddddd.html:13 Eastern Europe
+ddddd.html:14 42692393
+ddddd.html:11 United Arab Emirates
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 9856000
+ddddd.html:11 United Kingdom of Great Britain and Northern Ireland
+ddddd.html:12 Europe
+ddddd.html:13 Northern Europe
+ddddd.html:14 65110000
+ddddd.html:11 United States of America
+ddddd.html:12 Americas
+ddddd.html:13 Northern America
+ddddd.html:14 323947000
+ddddd.html:11 Uruguay
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 3480222
+ddddd.html:11 Uzbekistan
+ddddd.html:12 Asia
+ddddd.html:13 Central Asia
+ddddd.html:14 31576400
+ddddd.html:11 Vanuatu
+ddddd.html:12 Oceania
+ddddd.html:13 Melanesia
+ddddd.html:14 277500
+ddddd.html:11 Venezuela (Bolivarian Republic of)
+ddddd.html:12 Americas
+ddddd.html:13 South America
+ddddd.html:14 31028700
+ddddd.html:11 Viet Nam
+ddddd.html:12 Asia
+ddddd.html:13 South-Eastern Asia
+ddddd.html:14 92700000
+ddddd.html:11 Wallis and Futuna
+ddddd.html:12 Oceania
+ddddd.html:13 Polynesia
+ddddd.html:14 11750
+ddddd.html:11 Western Sahara
+ddddd.html:12 Africa
+ddddd.html:13 Northern Africa
+ddddd.html:14 510713
+ddddd.html:11 Yemen
+ddddd.html:12 Asia
+ddddd.html:13 Western Asia
+ddddd.html:14 27478000
+ddddd.html:11 Zambia
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 15933883
+ddddd.html:11 Zimbabwe
+ddddd.html:12 Africa
+ddddd.html:13 Eastern Africa
+ddddd.html:14 14240168
+
+
+
+
+​ 
+
+
+​ 
+
+
+How to compare two JSON have the same properties without order?
+
+
+INPUT:
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+console.log( _.isEqual(obj1, obj2) ); 
+                                                                
+OUTPUT :true
+
+
+
+
+Using lodash isEqual we can compare two JSON objects having same properties without order

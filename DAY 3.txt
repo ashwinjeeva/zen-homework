@@ -1,0 +1,172 @@
+﻿DAY 3
+
+
+For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+
+var obj = [{ person: "Name-1", age: "2", company: "GUVI" },
+            { person: "Name-2", age: "5", company: "GUVI geek" },
+            { person: "Name-3", age: "8", company: "GUVI geek network" },]
+            
+            
+    for(i=0;i<obj.length;i++){
+        console.log(obj[i].person)
+         console.log(obj[i].age)
+         console.log(obj[i].company)
+    }
+    for(x in obj){
+        console.log(x)
+         
+         }
+    for(x in obj){
+        
+         console.log(obj[x].person)
+         console.log(obj[x].age)
+         console.log(obj[x].company)
+         }     
+    for(x of obj){
+        
+         console.log(x)
+         
+         }
+    for(x of obj){
+        
+         console.log(x.person)
+         console.log(x.age)
+         console.log(x.company)
+         
+         }
+obj.forEach(car) 
+    obj.forEach(fun)
+    
+    function fun(e,i){
+        console.log(obj[i].person)
+        console.log(obj[i].age)
+         console.log(obj[i].company)
+    }
+    function car(e,i){
+        console.log(obj[i])
+        
+    }
+
+
+OUTPUT:
+Name-1
+2
+GUVI
+Name-2
+5
+GUVI geek
+Name-3
+8
+GUVI geek network
+0
+1
+2
+Name-1
+2
+GUVI
+Name-2
+5
+GUVI geek
+Name-3
+8
+GUVI geek network
+{ person: 'Name-1', age: '2', company: 'GUVI' }
+{ person: 'Name-2', age: '5', company: 'GUVI geek' }
+{ person: 'Name-3', age: '8', company: 'GUVI geek network' }
+Name-1
+2
+GUVI
+Name-2
+5
+GUVI geek
+Name-3
+8
+GUVI geek network
+{ person: 'Name-1', age: '2', company: 'GUVI' }
+{ person: 'Name-2', age: '5', company: 'GUVI geek' }
+{ person: 'Name-3', age: '8', company: 'GUVI geek network' }
+Name-1
+2
+GUVI
+Name-2
+5
+GUVI geek
+Name-3
+8
+GUVI geek network
+
+
+Execution Time:
+0.068s
+Memory Used:8132kb
+
+
+
+
+
+
+
+
+
+
+RESUME CREATED THROUGH JSON
+
+
+
+
+var resume={
+  "Personaldetails": {
+    "name": "ashwin kumar k",
+  "email": "ash@gmail.com",
+    "phone": "9444******",
+    "location": {
+      "address": "no 10",
+     "city": "chennai",
+      "countryCode": "IND"}
+  },
+      
+  "education": {
+    "institution": "rajalakshmi engg college ",
+    "branch": "mechanical",
+    "degree": "B.E",
+    "cgpa": "7.9"
+   },
+    "skills": {
+    "name": "html,css,java script",
+      },
+  "languages": {
+    "language": "English, tamil ",
+    "fluency": "Native speaker"
+  }
+
+
+}
+console.log(resume.Personaldetails)
+console.log(resume.education)
+console.log(resume.skills)
+console.log(resume.languages)
+console.log(resume.Personaldetails.location)
+console.log(resume.Personaldetails.location.city)
+
+
+OUTPUT:
+{ name: 'ashwin kumar k',
+  email: 'ash@gmail.com',
+  phone: '9444******',
+  location: { address: 'no 10', city: 'chennai', countryCode: 'IND' } }
+{ institution: 'rajalakshmi engg college ',
+  branch: 'mechanical',
+  degree: 'B.E',
+  cgpa: '7.9' }
+{ name: 'html,css,java script' }
+{ language: 'English, tamil ', fluency: 'Native speaker' }
+{ address: 'no 10', city: 'chennai', countryCode: 'IND' }
+chennai
+
+
+Execution Time:
+0.068s
+Memory Used:
+8160kb
