@@ -18,14 +18,6 @@
         </body>
     </html>
 
-
-   
-
-
-
-
-
-
 2. Design a contact us form with all fields as required.
 
 
@@ -75,17 +67,6 @@
 </fieldset>
 </body>
 </html>
-
-
-OUTPUT:
-  
-
-
-
-
-
-
-
 
 
 3.Use certain HTML elements to display the following in a HTML page.
@@ -142,16 +123,7 @@ OUTPUT:
 </body>
 </html>
    
-
-
-
-
-
-
 OUTPUT:
-
-
-
 
 Programming Language
    * JavaScript
@@ -171,17 +143,7 @@ Database
    * Vue.js
 
 
-
-
-
-
-
-
-
-
 4.Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
-
-
 
 
 <!DOCTYPE html>
@@ -283,34 +245,6 @@ Database
 </html>
    
 
-
-
-
-OUTPUT:
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 5.Create an element that helps you to open the https://google.com in separate new tab.
 
 
@@ -333,10 +267,6 @@ OUTPUT:
 
 </html>
    
-
-
-
-
 
 
 6.In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
@@ -373,13 +303,7 @@ OUTPUT:
 </html>
    
 
-
-
-
 7.Use the table tag to design given image Click here.
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -430,17 +354,6 @@ OUTPUT:
 
 </html>
    
-
-
-
-
-
-
-OUTPUT:
-  
-
-
-
 8.Write HTML input tags snippet to show default values for all Form elements.
 
 
@@ -481,15 +394,8 @@ OUTPUT:
 
 </html>
    
-
-
-
-
-
-
-
-
-In your, HTML page add the below line and Highlight it without using any CSS.
+   
+ In your, HTML page add the below line and Highlight it without using any CSS.
 "HTML & CSS is awesome”
 
 
