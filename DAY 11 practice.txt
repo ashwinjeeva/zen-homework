@@ -1,0 +1,510 @@
+﻿DAY 11 practice
+
+
+1.Fix the bugs in below snippet
+
+
+<html lang="en">
+    <head>
+        <title>Document guvi</title>
+    </head>
+    <body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+            <div>
+            <p> Guvi Geek Network</p>
+            </div>
+        </body>
+    </html>
+
+
+   
+
+
+
+
+
+
+2. Design a contact us form with all fields as required.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      fieldset{
+          border-radius: 10px;
+          border-width: 3px;
+          width: 30%;
+          margin-left: 35%;
+          margin-top: 5%;
+          
+      }
+        form{
+            padding-left: 20px;
+            text-align: justify;
+        }
+        input{
+           padding-left: 30px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <fieldset  >
+        <legend>Contact US!</legend>
+    <form>
+        <label class="lable">First Name</label>
+        <input type="text"  ><br><br>
+        <label class="label">Last Name</label>
+        <input type="text"><br><br>
+        <label class="label">Email</label>
+        <input type="text"><br><br>
+        <label class="label">Phone number</label>
+        <input type="text"><br><br>
+        <label class="label">Address</label>
+        <input type="text"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+</body>
+</html>
+
+
+OUTPUT:
+  
+
+
+
+
+
+
+
+
+
+3.Use certain HTML elements to display the following in a HTML page.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Programming Language</li>
+        <ul>
+            <li>JavaScript</li>
+            <ol type="a">
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+            </ol>
+    </ul>
+    <ul>
+        <li>Python</li>
+        <ol type="a">
+            <li>Django Framework</li>
+            <li>Flask Framework</li>
+        </ol>
+</ul>
+<ul>
+    <li>Java</li>
+    <ol type="a">
+        <li>Spring</li>
+        <li>Maven</li>
+        <li>Hibernate</li>
+    </ol>
+</ul>
+        </ul>
+        <ul>
+            <li>Database</li>
+            
+             
+                <ul>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ul>
+        
+    </ul>
+  
+    
+</body>
+</html>
+   
+
+
+
+
+
+
+OUTPUT:
+
+
+
+
+Programming Language
+   * JavaScript
+      1. Angular
+      2. React
+      3. Vue.js
+   * Python
+      1. Django Framework
+      2. Flask Framework
+   * Java
+      1. Spring
+      2. Maven
+      3. Hibernate
+Database
+   * Angular
+   * React
+   * Vue.js
+
+
+
+
+
+
+
+
+
+
+4.Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            outline: none;
+            width: 260px;
+        }
+        div{
+            border-style: solid;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 40%;
+                  margin-left: 27%;
+            margin-top: 5%;
+
+
+        
+        }
+        p{
+            text-align: center;
+            background-color: red;
+            color: white;
+            height: 50px;
+            font-size: 30px;
+            padding-top: 8px;
+          
+        }
+        #ad{
+            width: 100%
+        }
+        .f{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            outline: none;
+            width: 170px;
+            
+
+
+        }
+        #ln{
+            float: right;
+            
+        }
+        #lln{
+            margin-left: 210px;
+        }
+        #ls{
+            margin-left: 150px;
+        }
+        #lz{
+            margin-left: 140px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div>  <form action="">
+       
+            <p>Yes! I want to subscribe to Mag-o-Zine</p>
+        <input type="text" name="" id="fn" class="d">
+        <input type="text" name="" id="ln" class="d"><br><br>
+        <label for="fn">First Name</label>
+        <label id="lln" for="ln">Last Name</label><br>
+        <input type="text" name="" id="ad" class="d"><br><br>
+        <label for="ln">Address</label><br>
+        <input type="text" name="" id="" class="f">
+        <input type="text" name="" id="" class="f">
+        <input type="text" name="" id="" class="f"><br>
+        <label id="lc" for="">City</label>
+        <label id="ls" for="">State</label>
+        <label id="lz" for="">Zip</label><br><br>
+        <label for="">Subscribe for:</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">1 year ($19.95)</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">2 year ($35.00)</label><br><br>
+        <label for="">Send me more information about:</label><br><br>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Computer-Zine</label><br>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Fishing-Zine</label><br>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Cat-o-Zine</label><br>
+    </form><br></div>
+  
+   
+</body>
+</html>
+   
+
+
+
+
+OUTPUT:
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.Create an element that helps you to open the https://google.com in separate new tab.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body>
+    <p>Opens google in new tab</p>
+<a href=" https://google.com" target="_blank">www.google.com</a>
+</body>
+
+
+</html>
+   
+
+
+
+
+
+
+6.In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body>
+<form action="">
+    <label for="name">Employee name</label>
+    <input type="text" name="" id="name"><br>
+    <label for="id">Employee id</label>
+    <input type="text" name="" id="id"><br>
+    <label for="type">Employee Type</label>
+    <input type="radio" name="type" id="type1" value="Salaried">
+    <label for="type1">Salaried</label>
+    <input type="radio" name="type" id="type2" value="own business">
+    <label for="type2">own business</label>
+
+
+
+
+</form>
+</body>
+
+
+</html>
+   
+
+
+
+
+7.Use the table tag to design given image Click here.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body>
+<h1>Health chart</h1>
+<table border="1" >
+    <tr>
+        <td rowspan="2">State of health</td>
+        <td colspan="2">Fasting value</td>
+        <td>after eating</td>
+      
+    </tr>
+    <tr>
+        <td>minimum</td>
+        <td>maximum</td>
+        <td>2 hours after eating</td>
+    </tr>
+    <tr>
+        <td>healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+    </tr>
+    <tr>
+        <td>pre diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+    </tr>
+    <tr>
+        <td> diabetes</td>
+        <td>more than 126</td>
+        <td>N/A</td>
+        <td>more than 200</td>
+    </tr>
+</table>
+
+
+</body>
+
+
+</html>
+   
+
+
+
+
+
+
+OUTPUT:
+  
+
+
+
+8.Write HTML input tags snippet to show default values for all Form elements.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body>
+    <form >
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="ashwin"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="kumar"><br><br>
+        <label for="rad">Choose gender</label>
+        <input type="radio" id="rad" name="rad" value="1"
+        checked>
+        <label for="rad">male</label>
+         <input type="radio" id="rad" name="rad" value="2">
+        <label for="rad">female</label>
+       <input type="radio" id="rad" name="rad" value="3">
+        <label for="rad">others</label><br><br>
+        <label for="state">Choose state</label>
+        <select name="state" id="state">
+          <option value="tn">tamil nadu</option>
+          <option value="kl">kerala</option>
+          <option value="dl">delhi</option>
+          <option value="mu">mumbai</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+
+
+</html>
+   
+
+
+
+
+
+
+
+
+In your, HTML page add the below line and Highlight it without using any CSS.
+"HTML & CSS is awesome”
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus blanditiis similique minus tenetur distinctio,<mark>HTML & CSS is awesome</mark> ratione ab iure esse nisi exercitationem incidunt reprehenderit debitis alias, voluptates facilis unde, eaque ut.</p>
+</body>
+
+
+</html>
